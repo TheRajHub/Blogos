@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    border: border-box;
+    padding: 0px;
+}
+html{
+    background-color: rgb(15, 15, 15);
+}
+div{
+    text-align: center;
+    padding: 25%;
+    padding-top: 10%;
+    width: 50%;
+    height: 50%;
+
+}
+form{
+    
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.l{
+    float: left;
+    font-size: 1.5rem;
+    height: 5rem;
+    border-radius: 5%;
+    background-color: rgb(180, 0, 0);
+    color: black;
+    margin-bottom: 10px;
+}
+.v{
+    float: right;
+    height: 5rem;
+    font-size: 1.5rem;
+    border-radius: 5%;
+    background-color: rgb(180, 0, 0);
+    color: black;
+}
+
+h1{
+    font-style: italic;
+    color: rgb(180, 0, 0);
+    font-family: 'Caveat', cursive;
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 15%;
+
+}
