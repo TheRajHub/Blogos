@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <title>Blogos</title>
+</head>
+<body>
+    <%-include("partials/header.ejs")%>
+    <div id="work">
+        <h2>YOUR BLOGS</h2>
+        <ul>
+            <%for(var i=0;i<blogs.length;i++){%>
+                <li><a href="#"><%=blogs[i].blogName%></a></li>
+            <%}%>
+        </ul>
+    </div>
+    <div id="form">
+        <h2>Blog Input Form</h2>
+        <form action="/profile" method="post">
+            <!-- Blog Name -->
+            <label for="blogName">Blog Name:</label>
+            <input type="text" id="blogName" name="blogName" required>
+            <br>
+    
+            <!-- Date -->
+            <label for="blogDate">Date:</label>
+            <input type="date" id="blogDate" name="blogDate" required>
+            <br>
+    
+            <!-- Place -->
+            <label for="blogPlace">The blog</label>
+            <textarea id="blogPlace" name="blog" required></textarea>
+            <br>
+            
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

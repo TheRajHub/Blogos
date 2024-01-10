@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%-include("partials/header.ejs")%>
+    <div class="about">
+        <h1>
+            <%=bb.blogName%>
+        </h1>
+        <h3>
+            <%=bb.blogDate%>
+        </h3>
+    </div>
+    <p class="para"><%=bb.blogPlace%></p>
+</body>
+</html>
